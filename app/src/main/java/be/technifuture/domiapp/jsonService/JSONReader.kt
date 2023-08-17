@@ -14,8 +14,6 @@ class JSONReader {
 
         var json : String? = null
 
-        // val map = Gson().fromJson<Map<String, String>>(jsonString, ExtensionResponse::class.java)
-
         val apiData = Gson().fromJson(jsonString, ExtensionResponse::class.java)     // No need to add TypeAdapter
 
         val requestData = apiData.listCrypto
