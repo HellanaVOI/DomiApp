@@ -1,9 +1,9 @@
-package be.technifuture.domiapp
+package be.technifuture.domiapp.viewHolder
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import be.technifuture.domiapp.Extension
 import be.technifuture.domiapp.databinding.ChooseCellBinding
 
 class ExtListViewHolder(private var viewBinding: ChooseCellBinding, val onClick: (Extension, Boolean) -> Unit) :
@@ -11,6 +11,7 @@ class ExtListViewHolder(private var viewBinding: ChooseCellBinding, val onClick:
 
     fun bind(ext: Extension) {
         viewBinding.checkBox.text = ext.name
+        viewBinding.checkBox.isChecked = ext.isSelected
         viewBinding.checkBox.setOnClickListener{
             onClick(ext, viewBinding.checkBox.isChecked)
         }
@@ -19,7 +20,7 @@ class ExtListViewHolder(private var viewBinding: ChooseCellBinding, val onClick:
     }
 }
 
-class ExtListAdapter(private var ext: MutableList<Extension>,private val onClick: (Extension, Boolean) -> Unit) :
+class ExtListAdapter(private var ext: MutableList<Extension>, private val onClick: (Extension, Boolean) -> Unit) :
     RecyclerView.Adapter<ExtListViewHolder>() {
     private lateinit var binding: ChooseCellBinding
 

@@ -1,12 +1,13 @@
-package be.technifuture.domiapp
+package be.technifuture.domiapp.viewHolder
 
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
+import be.technifuture.domiapp.CardType
+import be.technifuture.domiapp.Carte
+import be.technifuture.domiapp.R
 import be.technifuture.domiapp.databinding.ListCellBinding
 
 class CardListViewHolder(private var viewBinding: ListCellBinding) :

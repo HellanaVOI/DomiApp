@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import be.technifuture.domiapp.viewHolder.ExtListAdapter
 import be.technifuture.domiapp.databinding.FragmentSelectBinding
 
 class SelectFragment : Fragment() {

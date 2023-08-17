@@ -1,100 +1,88 @@
-[
-  {
-    "id": "0",
-    "name": "Base",
-    "icon": "R.drawable.dominion1stedition_set",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "1",
-    "name": "Intrigue",
-    "icon": "R.drawable.ext_1",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "2",
-    "name": "Rivages",
-    "icon": "R.drawable.ext_2",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "3",
-    "name": "Alchimie",
-    "icon": "R.drawable.ext_3",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "4",
-    "name": "Prospérité",
-    "icon": "R.drawable.ext_4",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "5",
-    "name": "Abondance",
-    "icon": "R.drawable.ext_5",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "6",
-    "name": "Arrière Pays",
-    "icon": "R.drawable.ext_6",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "7",
-    "name": "L'Âge des ténèbres",
-    "icon": "R.drawable.ext_7",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "8",
-    "name": "Guildes",
-    "icon": "R.drawable.ext_8",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "9",
-    "name": "Aventures",
-    "icon": "R.drawable.ext_9",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "10",
-    "name": "Empires",
-    "icon": "R.drawable.ext_10",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "11",
-    "name": "Nocturne",
-    "icon": "R.drawable.ext_11",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "12",
-    "name": "Renaissance",
-    "icon": "R.drawable.ext_12",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "13",
-    "name": "Ménagerie",
-    "icon": "R.drawable.ext_13",
-    "isSelected": "false",
-    "isBlackList": "false"
-  }
-]
+{
+  "data": [
+    {
+      "id": "0",
+      "name": "Base",
+      "icon": "dominion1stedition_set",
+      "isBlackList": "false"
+    },
+    {
+      "id": "1",
+      "name": "Intrigue",
+      "icon": "R.drawable.ext_1",
+      "isBlackList": "false"
+    },
+    {
+      "id": "2",
+      "name": "Rivages",
+      "icon": "R.drawable.ext_2",
+      "isBlackList": "false"
+    },
+    {
+      "id": "3",
+      "name": "Alchimie",
+      "icon": "R.drawable.ext_3",
+      "isBlackList": "false"
+    },
+    {
+      "id": "4",
+      "name": "Prospérité",
+      "icon": "R.drawable.ext_4",
+      "isBlackList": "false"
+    },
+    {
+      "id": "5",
+      "name": "Abondance",
+      "icon": "R.drawable.ext_5",
+      "isBlackList": "false"
+    },
+    {
+      "id": "6",
+      "name": "Arrière Pays",
+      "icon": "R.drawable.ext_6",
+      "isBlackList": "false"
+    },
+    {
+      "id": "7",
+      "name": "L'Âge des ténèbres",
+      "icon": "R.drawable.ext_7",
+      "isBlackList": "false"
+    },
+    {
+      "id": "8",
+      "name": "Guildes",
+      "icon": "R.drawable.ext_8",
+      "isBlackList": "false"
+    },
+    {
+      "id": "9",
+      "name": "Aventures",
+      "icon": "R.drawable.ext_9",
+      "isBlackList": "false"
+    },
+    {
+      "id": "10",
+      "name": "Empires",
+      "icon": "R.drawable.ext_10",
+      "isBlackList": "false"
+    },
+    {
+      "id": "11",
+      "name": "Nocturne",
+      "icon": "R.drawable.ext_11",
+      "isBlackList": "false"
+    },
+    {
+      "id": "12",
+      "name": "Renaissance",
+      "icon": "R.drawable.ext_12",
+      "isBlackList": "false"
+    },
+    {
+      "id": "13",
+      "name": "Ménagerie",
+      "icon": "R.drawable.ext_13",
+      "isBlackList": "false"
+    }
+  ]
+}

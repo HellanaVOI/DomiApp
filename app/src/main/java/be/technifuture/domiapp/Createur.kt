@@ -79,8 +79,7 @@ class Createur {
         listCarte.add(Carte("Eclaireur", "4", extension[1], listOf(CardType.ACTION)))
         listCarte.add(Carte("Escroc", "3", extension[1], listOf(CardType.ACTION)))
         listCarte.add(Carte("Fonderie", "4", extension[1], listOf(CardType.ACTION)))
-        listCarte.add(Carte("Grand hall", "3", extension[1], listOf(CardType.ACTION, CardType.VICTOIRE))
-        )
+        listCarte.add(Carte("Grand hall", "3", extension[1], listOf(CardType.ACTION, CardType.VICTOIRE)))
         listCarte.add(Carte("Harem", "6", extension[1], listOf(CardType.TRESOR, CardType.VICTOIRE)))
         listCarte.add(Carte("Hommage", "5", extension[1], listOf(CardType.ACTION)))
         listCarte.add(Carte("Intendant", "3", extension[1], listOf(CardType.ACTION)))
@@ -178,7 +177,6 @@ class Createur {
     }
 
     fun getPoolOfCarte(): Array<Carte> {
-
         val choose = mutableListOf<Carte>()
         val extensionSelected = extension.filter { itExt ->
             itExt.isSelected
@@ -186,11 +184,20 @@ class Createur {
 
         var tempList = deck.filter { itCarte ->
             extensionSelected.contains(itCarte.ext)
-        }
+        }.toMutableList()
 
         if (tempList.isEmpty())
             tempList = deck
 
+        for(i in 1..10){
+            val rand = (tempList.indices).random()
+
+            choose.add(tempList[rand])
+            tempList.removeAt(rand)
+        }
+        return choose.sortedBy { it.name }.toTypedArray()
+
+        /*
         while (choose.size < 10) {
             val carte = tempList.random()
 
@@ -200,5 +207,9 @@ class Createur {
             }
         }
         return choose.sortedBy { it.name }.toTypedArray()
+        */
+
+
+
     }
 }

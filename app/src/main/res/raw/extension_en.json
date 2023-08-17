@@ -1,100 +1,102 @@
-[
-  {
-    "id": "0",
-    "name": "Base",
-    "icon": "R.drawable.ext_0",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "1",
-    "name": "Intrigue",
-    "icon": "R.drawable.ext_1",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "2",
-    "name": "Seaside",
-    "icon": "R.drawable.ext_2",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "3",
-    "name": "Alchemy",
-    "icon": "R.drawable.ext_3",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "4",
-    "name": "Prosperity",
-    "icon": "R.drawable.ext_4",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "5",
-    "name": "Cornucopia",
-    "icon": "R.drawable.ext_5",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "6",
-    "name": "Hinterlands",
-    "icon": "R.drawable.ext_6",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "7",
-    "name": "Dark Ages",
-    "icon": "R.drawable.ext_7",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "8",
-    "name": "Guilds",
-    "icon": "R.drawable.ext_8",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "9",
-    "name": "Adventures",
-    "icon": "R.drawable.ext_9",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "10",
-    "name": "Empires",
-    "icon": "R.drawable.ext_10",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "11",
-    "name": "Nocturne",
-    "icon": "R.drawable.ext_11",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "12",
-    "name": "Renaissance",
-    "icon": "R.drawable.ext_12",
-    "isSelected": "false",
-    "isBlackList": "false"
-  },
-  {
-    "id": "13",
-    "name": "Menagerie",
-    "icon": "R.drawable.ext_13",
-    "isSelected": "false",
-    "isBlackList": "false"
-  }
-]
+{
+  "data": [
+    {
+      "id": "0",
+      "name": "Base",
+      "icon": "R.drawable.ext_0",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "1",
+      "name": "Intrigue",
+      "icon": "R.drawable.ext_1",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "2",
+      "name": "Seaside",
+      "icon": "R.drawable.ext_2",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "3",
+      "name": "Alchemy",
+      "icon": "R.drawable.ext_3",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "4",
+      "name": "Prosperity",
+      "icon": "R.drawable.ext_4",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "5",
+      "name": "Cornucopia",
+      "icon": "R.drawable.ext_5",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "6",
+      "name": "Hinterlands",
+      "icon": "R.drawable.ext_6",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "7",
+      "name": "Dark Ages",
+      "icon": "R.drawable.ext_7",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "8",
+      "name": "Guilds",
+      "icon": "R.drawable.ext_8",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "9",
+      "name": "Adventures",
+      "icon": "R.drawable.ext_9",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "10",
+      "name": "Empires",
+      "icon": "R.drawable.ext_10",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "11",
+      "name": "Nocturne",
+      "icon": "R.drawable.ext_11",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "12",
+      "name": "Renaissance",
+      "icon": "R.drawable.ext_12",
+      "isSelected": "false",
+      "isBlackList": "false"
+    },
+    {
+      "id": "13",
+      "name": "Menagerie",
+      "icon": "R.drawable.ext_13",
+      "isSelected": "false",
+      "isBlackList": "false"
+    }
+  ]
+}

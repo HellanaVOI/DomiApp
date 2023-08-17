@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.GridLayoutManager
 import be.technifuture.domiapp.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import java.io.InputStream
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,7 +27,6 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        //tool bar
         val toolbar = findViewById<Toolbar>(R.id.toolbar_)
         val navController = findNavController(R.id.nav_host_fragment_container)
         setSupportActionBar(toolbar)
@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         NavigationUI.setupActionBarWithNavController(this, navController)
+        val inputStream: InputStream = resources.openRawResource(R.raw.extension_fr)
     }
 
 
