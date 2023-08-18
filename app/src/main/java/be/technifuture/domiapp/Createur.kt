@@ -1,18 +1,23 @@
 package be.technifuture.domiapp
 
+import android.content.Context
+import android.content.res.Resources
 import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresApi
+import be.technifuture.domiapp.jsonService.ExtensionModel
+import be.technifuture.domiapp.jsonService.JSONReader
 import com.google.gson.GsonBuilder
 import java.io.InputStream
 import java.nio.file.Files
 import java.nio.file.Paths
 
-class Createur {
+class Createur(res: Resources) {
 
     val extension: MutableList<Extension> = initExt().filter {
         !it.isBlackList
     }.toMutableList()
+    //val extension: MutableList<ExtensionModel> = JSONReader().getExt(res.openRawResource(R.raw.extension_fr))
     private val allExtension: MutableList<Extension> = initExt()
     private val deck: MutableList<Carte> = initDeck()
 

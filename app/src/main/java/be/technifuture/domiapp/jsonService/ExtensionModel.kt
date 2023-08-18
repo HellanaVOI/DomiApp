@@ -14,6 +14,7 @@ import com.google.gson.annotations.SerializedName
         var icon: String? = null,
         @SerializedName("isBlackList")
         var isBlackList: String? = null,
+        var isSelected: Boolean = false
     )
 
     data class ExtensionResponse(

@@ -13,7 +13,7 @@ import be.technifuture.domiapp.databinding.FragmentSelectBinding
 
 class SelectFragment : Fragment() {
 
-    val builder = Createur()
+    val builder = Createur(resources)
     lateinit var binding: FragmentSelectBinding
 
     override fun onCreateView(
