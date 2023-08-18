@@ -17,7 +17,7 @@ class Createur(res: Resources) {
     val extension: MutableList<Extension> = initExt().filter {
         !it.isBlackList
     }.toMutableList()
-    //val extension: MutableList<ExtensionModel> = JSONReader().getExt(res.openRawResource(R.raw.extension_fr))
+    val extension: MutableList<ExtensionModel> = JSONReader().getExt(res.openRawResource(R.raw.extension_fr))
     private val allExtension: MutableList<Extension> = initExt()
     private val deck: MutableList<Carte> = initDeck()
 
