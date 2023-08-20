@@ -9,79 +9,97 @@
     {
       "id": "1",
       "name": "Intrigue",
-      "icon": "R.drawable.ext_1",
+      "icon": "intrigue1stedition_set",
       "isBlackList": "false"
     },
     {
       "id": "2",
       "name": "Rivages",
-      "icon": "R.drawable.ext_2",
+      "icon": "seaside1stedition_set",
       "isBlackList": "false"
     },
     {
       "id": "3",
       "name": "Alchimie",
-      "icon": "R.drawable.ext_3",
+      "icon": "alchemy_set",
       "isBlackList": "false"
     },
     {
       "id": "4",
       "name": "Prospérité",
-      "icon": "R.drawable.ext_4",
+      "icon": "prosperity1stedition_set",
       "isBlackList": "false"
     },
     {
       "id": "5",
       "name": "Abondance",
-      "icon": "R.drawable.ext_5",
+      "icon": "cornucopia_set",
       "isBlackList": "false"
     },
     {
       "id": "6",
       "name": "Arrière Pays",
-      "icon": "R.drawable.ext_6",
+      "icon": "hinterlands1stedition_set",
       "isBlackList": "false"
     },
     {
       "id": "7",
       "name": "L'Âge des ténèbres",
-      "icon": "R.drawable.ext_7",
+      "icon": "dark_ages_set",
       "isBlackList": "false"
     },
     {
       "id": "8",
       "name": "Guildes",
-      "icon": "R.drawable.ext_8",
+      "icon": "guilds_set",
       "isBlackList": "false"
     },
     {
       "id": "9",
       "name": "Aventures",
-      "icon": "R.drawable.ext_9",
+      "icon": "adventures_set",
       "isBlackList": "false"
     },
     {
       "id": "10",
       "name": "Empires",
-      "icon": "R.drawable.ext_10",
+      "icon": "empires_set",
       "isBlackList": "false"
     },
     {
       "id": "11",
       "name": "Nocturne",
-      "icon": "R.drawable.ext_11",
+      "icon": "nocturne_set",
       "isBlackList": "false"
     },
     {
       "id": "12",
       "name": "Renaissance",
-      "icon": "R.drawable.ext_12",
+      "icon": "renaissance_set",
       "isBlackList": "false"
     },
     {
       "id": "13",
       "name": "Ménagerie",
-      "icon": "R.drawable.ext_13",
+      "icon": "menagerie_set",
+      "isBlackList": "false"
+    },
+    {
+      "id": "14",
+      "name": "Intrigue(2e Edition)",
+      "icon": "intrigue2ndedition_set",
+      "isBlackList": "false"
+    },
+    {
+      "id": "15",
+      "name": "Base (2e Edition)",
+      "icon": "dominion2stedition_set",
+      "isBlackList": "false"
+    },
+    {
+      "id": "16",
+      "name": "Rivage (2e Edition)",
+      "icon": "seaside2ndedition_set",
       "isBlackList": "false"
     }
   ]

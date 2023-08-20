@@ -14,9 +14,6 @@ import java.nio.file.Paths
 
 class Createur(res: Resources) {
 
-    val extension: MutableList<Extension> = initExt().filter {
-        !it.isBlackList
-    }.toMutableList()
     val extension: MutableList<ExtensionModel> = JSONReader().getExt(res.openRawResource(R.raw.extension_fr))
     private val allExtension: MutableList<Extension> = initExt()
     private val deck: MutableList<Carte> = initDeck()
@@ -28,7 +25,7 @@ class Createur(res: Resources) {
         listExt.add(Extension(2, "Rivages", R.drawable.seaside1stedition_set, false))
         listExt.add(Extension(3, "Alchimie", R.drawable.alchemy_set, false))
         listExt.add(Extension(4, "Prospérité", R.drawable.prosperity1stedition_set, false))
-        listExt.add(Extension(5, "Abondance",  R.drawable.alchemy_set, false))
+        listExt.add(Extension(5, "Abondance", R.drawable.cornucopia_set, false))
         listExt.add(Extension(6, "Arrière Pays", R.drawable.hinterlands1stedition_set, false))
         listExt.add(Extension(7, "L'Âge des ténèbres", R.drawable.dark_ages_set, false))
         listExt.add(Extension(8, "Guildes", R.drawable.guilds_set, false))
