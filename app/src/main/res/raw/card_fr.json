@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "id": "0_0",
+      "name": "Douves",
+      "cout": "2",
+      "ext": "0",
+      "type": ["REACT"]
+    },
+    {
+      "id": "0_1",
+      "name": "Atelier",
+      "cout": "3",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_2",
+      "name": "Aventurier",
+      "cout": "6",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_3",
+      "name": "Bibliothéque",
+      "cout": "5",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_4",
+      "name": "Bucheron",
+      "cout": "3",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_5",
+      "name": "Bureaucrate",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_6",
+      "name": "Cave",
+      "cout": "2",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_7",
+      "name": "Chambre du conseil",
+      "cout": "5",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_8",
+      "name": "Chancelier",
+      "cout": "3",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_9",
+      "name": "Chapelle",
+      "cout": "2",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_10",
+      "name": "Espion",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_11",
+      "name": "Festin",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_12",
+      "name": "Festival",
+      "cout": "5",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_13",
+      "name": "Forgeron",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_14",
+      "name": "Laboratoire",
+      "cout": "5",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_15",
+      "name": "Marché",
+      "cout": "5",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_16",
+      "name": "Milice",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_17",
+      "name": "Mine",
+      "cout": "5",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_18",
+      "name": "Preteur sur Gages",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_19",
+      "name": "Rénovation",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_20",
+      "name": "Salle du Throne",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_21",
+      "name": "Sorcière",
+      "cout": "5",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_22",
+      "name": "Village",
+      "cout": "3",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_23",
+      "name": "Voleur",
+      "cout": "4",
+      "ext": "0",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "0_24",
+      "name": "Jardin",
+      "cout": "4",
+      "ext": "0",
+      "type": ["VICTORY"]
+    }
+  ]
+}

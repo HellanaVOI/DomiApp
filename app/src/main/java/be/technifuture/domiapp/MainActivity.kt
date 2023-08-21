@@ -29,14 +29,6 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        ///ZONE DE TEST
-
-        var varTest = JSONReader().getExt(resources.openRawResource(R.raw.extension_fr))
-        Log.d("TEST", "Ca dois se faire ici :")
-        varTest[5].name?.let { Log.d("TEST", it) }
-
-        ///
-
         val toolbar = findViewById<Toolbar>(R.id.toolbar_)
         val navController = findNavController(R.id.nav_host_fragment_container)
         setSupportActionBar(toolbar)
