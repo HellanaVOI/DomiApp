@@ -10,10 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import be.technifuture.domiapp.viewHolder.ExtListAdapter
 import be.technifuture.domiapp.databinding.FragmentSelectBinding
+import be.technifuture.domiapp.jsonService.ExtensionModel
 
 class SelectFragment : Fragment() {
 
-    val builder = Createur(resources)
+    val builder = Builder(resources)
     lateinit var binding: FragmentSelectBinding
 
     override fun onCreateView(
@@ -26,7 +27,7 @@ class SelectFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        setupRecyclerView(builder.extension)
+        setupRecyclerView(builder.getExtension())
 
         binding.buttonSelect.setOnClickListener {
 
@@ -38,16 +39,13 @@ class SelectFragment : Fragment() {
 
 
 
-    private fun setupRecyclerView(cardList: List<Extension>) {
+    private fun setupRecyclerView(cardList: List<ExtensionModel>) {
         val recyclerView = binding.extRecyclerView
 
         recyclerView.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
 
         recyclerView.adapter = ExtListAdapter(cardList.toMutableList()){ext, selected ->
             builder.filterList(ext, selected)
-
-            //val direction = SelectFragmentDirections.actionSelectFragmentToListFragment(builder.getPoolOfCarte())
-            //findNavController().navigate(direction)
         }
     }
 }

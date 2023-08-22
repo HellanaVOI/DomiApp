@@ -12,11 +12,20 @@ class JSONReader {
         input.read(buffer)
         val jsonString = String(buffer)
 
-        var json : String? = null
+        val apiData = Gson().fromJson(jsonString, ExtensionResponse::class.java)
 
-        val apiData = Gson().fromJson(jsonString, ExtensionResponse::class.java)     // No need to add TypeAdapter
+        return apiData.list
+    }
 
-        val requestData = apiData.listCrypto
-        return apiData.listCrypto
+    fun getCard(input: InputStream): MutableList<CardModel>{
+
+        val size: Int = input.available()
+        val buffer = ByteArray(size)
+        input.read(buffer)
+        val jsonString = String(buffer)
+
+        val apiData = Gson().fromJson(jsonString, CarResponse::class.java)
+
+        return apiData.list
     }
 }

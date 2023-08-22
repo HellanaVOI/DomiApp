@@ -13,11 +13,11 @@ import com.google.gson.annotations.SerializedName
         @SerializedName("icon")
         var icon: String? = null,
         @SerializedName("isBlackList")
-        var isBlackList: String? = null,
+        var isBlackList: Boolean,
         var isSelected: Boolean = false
     )
 
     data class ExtensionResponse(
         @SerializedName("data")
-        var listCrypto: MutableList<ExtensionModel>
+        var list: MutableList<ExtensionModel>
     )

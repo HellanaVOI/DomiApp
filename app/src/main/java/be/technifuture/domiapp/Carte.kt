@@ -14,6 +14,5 @@ enum class CardType {
     TRESOR,
     ACTION,
     DUREE,
-    REACTION,
-    ATTACK
+    REACTION
 }
