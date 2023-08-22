@@ -9,6 +9,7 @@ class Builder(res: Resources) {
 
     private val extension: MutableList<ExtensionModel> = JSONReader().getExt(res.openRawResource(R.raw.extension_fr))
     private val card: MutableList<CardModel> = JSONReader().getCard(res.openRawResource(R.raw.card_fr))
+    var nbr_card: Int = 10
 
 
     private fun initDeck(): MutableList<Carte> {
@@ -89,26 +90,26 @@ class Builder(res: Resources) {
         return listCarte
     }
 
-    fun filterList(ext: Extension, selected: Boolean) {
+    fun filterList(ext: ExtensionModel, selected: Boolean) {
         extension.first {
             it.id == ext.id
         }.isSelected = selected
     }
 
-    fun getPoolOfCarte(): Array<Carte> {
-        val choose = mutableListOf<Carte>()
+    fun getPoolOfCarte(): Array<CardModel> {
+        val choose = mutableListOf<CardModel>()
         val extensionSelected = extension.filter { itExt ->
             itExt.isSelected
         }
 
         var tempList = card.filter { itCarte ->
-            extensionSelected.contains(itCarte.ext)
+            extensionSelected.contains(itCarte.extension)
         }.toMutableList()
 
         if (tempList.isEmpty())
-            tempList = deck
+            tempList = card
 
-        for(i in 1..10){
+        for(i in 1..nbr_card){
             val rand = (tempList.indices).random()
 
             choose.add(tempList[rand])
