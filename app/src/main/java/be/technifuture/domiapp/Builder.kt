@@ -98,16 +98,17 @@ class Builder(res: Resources) {
 
     fun getPoolOfCarte(): Array<CardModel> {
         val choose = mutableListOf<CardModel>()
+        val tempList = mutableListOf<CardModel>()
+
         val extensionSelected = extension.filter { itExt ->
             itExt.isSelected
         }
 
-        var tempList = card.filter { itCarte ->
-            extensionSelected.contains(itCarte.extension)
-        }.toMutableList()
-
-        if (tempList.isEmpty())
-            tempList = card
+        extensionSelected.forEach { ext ->
+            tempList.addAll(card.filter { card ->
+              ext.id == card.extension
+            })
+        }
 
         for(i in 1..nbr_card){
             val rand = (tempList.indices).random()
@@ -116,9 +117,6 @@ class Builder(res: Resources) {
             tempList.removeAt(rand)
         }
         return choose.sortedBy { it.name }.toTypedArray()
-
-
-
     }
 
     fun getExtension(): List<ExtensionModel> {
