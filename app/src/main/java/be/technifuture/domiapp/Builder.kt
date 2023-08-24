@@ -41,8 +41,9 @@ class Builder(res: Resources) {
     }
 
     fun getExtension(): List<ExtensionModel> {
-        return extension.filter {
+        return extension
+        /*return extension.filter {
             !it.isBlackList
-        }
+        }*/
     }
 }
