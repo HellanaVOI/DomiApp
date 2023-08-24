@@ -9,6 +9,7 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import be.technifuture.domiapp.viewHolder.CardListAdapter
 import be.technifuture.domiapp.databinding.FragmentListBinding
+import be.technifuture.domiapp.jsonService.CardModel
 
 class ListFragment : Fragment() {
 
@@ -29,7 +30,7 @@ class ListFragment : Fragment() {
         setupRecyclerView(carteToGame)
     }
 
-    private fun setupRecyclerView(cardList: Array<Carte>){
+    private fun setupRecyclerView(cardList: Array<CardModel>){
         val recyclerView = binding.cardRecyclerView
 
         //recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)

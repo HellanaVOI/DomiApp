@@ -5,22 +5,23 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
-import be.technifuture.domiapp.Carte
 import be.technifuture.domiapp.R
 import be.technifuture.domiapp.databinding.ListCellBinding
+import be.technifuture.domiapp.jsonService.CardModel
+import be.technifuture.domiapp.jsonService.CardType
 
 class CardListViewHolder(private var viewBinding: ListCellBinding) :
     RecyclerView.ViewHolder(viewBinding.root) {
 
-    fun bind(card: Carte) {
+    fun bind(card: CardModel) {
         viewBinding.coin.text = card.cout
         viewBinding.fragList.text = card.name
-        viewBinding.fragListExt.text = card.ext.name
+        viewBinding.fragListExt.text = card.extension
 
         viewBinding.type1.setBackgroundColor(
             ResourcesCompat.getColor(
                 itemView.resources,
-                when (card.type[0]) {
+                when (card.cardType(0)) {
                     CardType.ACTION -> R.color.white
                     CardType.REACTION -> R.color.blue_attack
                     CardType.TRESOR -> R.color.yellow_treasure
@@ -30,11 +31,11 @@ class CardListViewHolder(private var viewBinding: ListCellBinding) :
             )
         )
 
-        if(card.type.size > 1){
+        if(card.type?.size!! > 1){
             viewBinding.type2.setBackgroundColor(
                 ResourcesCompat.getColor(
                     itemView.resources,
-                    when (card.type[1]) {
+                    when (card.cardType(1)) {
                         CardType.ACTION -> R.color.white
                         CardType.REACTION -> R.color.blue_attack
                         CardType.TRESOR -> R.color.yellow_treasure
@@ -52,7 +53,7 @@ class CardListViewHolder(private var viewBinding: ListCellBinding) :
     }
 }
 
-class CardListAdapter(private var card: MutableList<Carte>) :
+class CardListAdapter(private var card: MutableList<CardModel>) :
     RecyclerView.Adapter<CardListViewHolder>() {
     private lateinit var binding: ListCellBinding
 

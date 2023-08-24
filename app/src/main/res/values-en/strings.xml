@@ -1,12 +1,3 @@
 <resources>
     <string name="app_name">Dominion App</string>
-
-    <!-- Button name -->
-    <string name="select">Select</string>
-    <string name="limite">Limit</string>
-    <string name="shafle">Shafle</string>
-
-    <!-- Extension name -->
-    <string name="extBlank">Nothing</string>
-    <string name="fileJson">extension_en</string>
 </resources>

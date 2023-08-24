@@ -1,9 +1,10 @@
 package be.technifuture.domiapp.jsonService
 
-import be.technifuture.domiapp.Extension
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
-
+@Parcelize
     data class ExtensionModel(
 
         @SerializedName("id")
@@ -15,9 +16,9 @@ import com.google.gson.annotations.SerializedName
         @SerializedName("isBlackList")
         var isBlackList: Boolean,
         var isSelected: Boolean = false
-    )
+    ) : Parcelable
 
-    data class ExtensionResponse(
+data class ExtensionResponse(
         @SerializedName("data")
         var list: MutableList<ExtensionModel>
     )

@@ -31,8 +31,8 @@ class SelectFragment : Fragment() {
 
         binding.buttonSelect.setOnClickListener {
 
-            val direction = SelectFragmentDirections.actionSelectFragmentToListFragment(builder.getPoolOfCarte())
-            findNavController().navigate(direction)
+           /* val direction = SelectFragmentDirections.actionSelectFragmentToListFragment(builder.getPoolOfCarte())
+            findNavController().navigate(direction)*/
         }
     }
 
