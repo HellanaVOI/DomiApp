@@ -639,6 +639,83 @@
       "cout": "0f",
       "ext": "3",
       "type": ["ACTION"]
+    },
+    {
+      "id": "4_0",
+      "name": "Mirador",
+      "cout": "3",
+      "ext": "4",
+      "type": ["REACT"]
+    },
+    {
+      "id": "4_1",
+      "name": "Agrandissement",
+      "cout": "7",
+      "ext": "4",
+      "type": ["REACT"]
+    },
+    {
+      "id": "4_2",
+      "name": "Banque",
+      "cout": "7",
+      "ext": "4",
+      "type": ["TREASOR"]
+    },
+    {
+      "id": "4_3",
+      "name": "Bureau de comptabilité",
+      "cout": "5",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_4",
+      "name": "Carrière",
+      "cout": "4",
+      "ext": "4",
+      "type": ["TREASOR"]
+    },
+    {
+      "id": "4_5",
+      "name": "Chambre forte",
+      "cout": "5",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_6",
+      "name": "Charlatant",
+      "cout": "5",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_7",
+      "name": "Colporteur",
+      "cout": "8*",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_8",
+      "name": "Contrebande",
+      "cout": "5",
+      "ext": "4",
+      "type": ["TREASOR"]
+    },
+    {
+      "id": "4_9",
+      "name": "Cour du roi",
+      "cout": "7",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_10",
+      "name": "Entreprise Risquée",
+      "cout": "5",
+      "ext": "4",
+      "type": ["TREASOR"]
     }
   ]
 }
