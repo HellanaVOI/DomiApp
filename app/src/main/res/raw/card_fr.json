@@ -716,6 +716,104 @@
       "cout": "5",
       "ext": "4",
       "type": ["TREASOR"]
+    },
+    {
+      "id": "4_11",
+      "name": "Evêque",
+      "cout": "4",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_12",
+      "name": "Fiers-à-bras",
+      "cout": "6",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_13",
+      "name": "Forge",
+      "cout": "7",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_14",
+      "name": "Foule",
+      "cout": "5",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_15",
+      "name": "Grand Marché",
+      "cout": "6",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_16",
+      "name": "Hôtel de la monnaie",
+      "cout": "5",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_17",
+      "name": "Magot",
+      "cout": "6",
+      "ext": "4",
+      "type": ["TREASOR"]
+    },
+    {
+      "id": "4_18",
+      "name": "Monument",
+      "cout": "6",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_19",
+      "name": "Prêt",
+      "cout": "3",
+      "ext": "4",
+      "type": ["TREASOR"]
+    },
+    {
+      "id": "4_20",
+      "name": "Route Commerciale",
+      "cout": "3",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_21",
+      "name": "Sceau Royal",
+      "cout": "5",
+      "ext": "4",
+      "type": ["TREASOR"]
+    },
+    {
+      "id": "4_22",
+      "name": "Talisman",
+      "cout": "4",
+      "ext": "4",
+      "type": ["TREASOR"]
+    },
+    {
+      "id": "4_23",
+      "name": "Village Ouvrier",
+      "cout": "4",
+      "ext": "4",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "4_24",
+      "name": "Ville",
+      "cout": "5",
+      "ext": "4",
+      "type": ["ACTION"]
     }
   ]
 }
