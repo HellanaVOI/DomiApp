@@ -555,6 +555,90 @@
       "cout": "4",
       "ext": "2",
       "type": ["VICTORY"]
+    },
+    {
+      "id": "3_0",
+      "name": "Alchimiste",
+      "cout": "3f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_1",
+      "name": "Apothicaire",
+      "cout": "2f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_2",
+      "name": "Apprenti",
+      "cout": "5",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_3",
+      "name": "Bassin divinatoire",
+      "cout": "2f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_4",
+      "name": "Familier",
+      "cout": "3f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_5",
+      "name": "Golem",
+      "cout": "4f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_6",
+      "name": "Herboriste",
+      "cout": "2",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_7",
+      "name": "Pierre philosophale",
+      "cout": "3f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_8",
+      "name": "Possession",
+      "cout": "6f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_9",
+      "name": "Transmutation",
+      "cout": "0f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_10",
+      "name": "Université",
+      "cout": "2f",
+      "ext": "3",
+      "type": ["ACTION"]
+    },
+    {
+      "id": "3_11",
+      "name": "Vignoble",
+      "cout": "0f",
+      "ext": "3",
+      "type": ["ACTION"]
     }
   ]
 }
