@@ -1,6 +1,7 @@
 package be.technifuture.domiapp.jsonService
 
 import android.os.Parcelable
+import be.technifuture.domiapp.R
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
@@ -20,22 +21,7 @@ data class CardModel(
     @SerializedName("isBlackList")
     var isBlackList: Boolean,
     var isSelected: Boolean = false
-) : Parcelable {
-    fun cardType(id: Int): CardType{
-        return when(type?.get(id)){
-            "ACTION" ->
-                CardType.ACTION
-            "REACT" ->
-                CardType.REACTION
-            "TREASOR" ->
-                CardType.TRESOR
-            "TIME" ->
-                CardType.DUREE
-            else ->
-                CardType.ACTION
-        }
-    }
-}
+) : Parcelable
 
 enum class CardType {
     VICTOIRE,

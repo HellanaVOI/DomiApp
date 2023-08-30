@@ -9,6 +9,7 @@
     <color name="orange_duree">#FFB700</color>
     <color name="yellow_treasure">#FFEB3B</color>
     <color name="green_victory">#4CAF50</color>
+    <color name="grey">#ABAFAB</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

@@ -5,11 +5,16 @@ import be.technifuture.domiapp.jsonService.CardModel
 import be.technifuture.domiapp.jsonService.ExtensionModel
 import be.technifuture.domiapp.jsonService.JSONReader
 
-class Builder(res: Resources) {
+object Builder{
 
-    private val extension: MutableList<ExtensionModel> = JSONReader().getExt(res.openRawResource(R.raw.extension_fr))
-    private val card: MutableList<CardModel> = JSONReader().getCard(res.openRawResource(R.raw.card_fr))
+    private var extension =  mutableListOf <ExtensionModel>()
+    private var card = mutableListOf<CardModel>()
     private var nbrCard: Int = 10
+
+    fun startBuild(res: Resources){
+        extension = JSONReader().getExt(res.openRawResource(R.raw.extension_fr))
+        card = JSONReader().getCard(res.openRawResource(R.raw.card_fr))
+    }
 
     fun filterList(ext: ExtensionModel, selected: Boolean) {
         extension.first {
@@ -42,8 +47,11 @@ class Builder(res: Resources) {
 
     fun getExtension(): List<ExtensionModel> {
         return extension
-        /*return extension.filter {
-            !it.isBlackList
-        }*/
+    }
+
+    fun getExtensionName(idExtension: String): String? {
+        return extension.first {
+            it.id == idExtension
+        }.name
     }
 }

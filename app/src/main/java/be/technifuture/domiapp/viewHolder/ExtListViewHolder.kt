@@ -1,11 +1,12 @@
 package be.technifuture.domiapp.viewHolder
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import be.technifuture.domiapp.R
 import be.technifuture.domiapp.databinding.ChooseCellBinding
 import be.technifuture.domiapp.jsonService.ExtensionModel
+
 
 class ExtListViewHolder(private var viewBinding: ChooseCellBinding, val onClick: (ExtensionModel, Boolean) -> Unit) :
     RecyclerView.ViewHolder(viewBinding.root) {
@@ -16,9 +17,10 @@ class ExtListViewHolder(private var viewBinding: ChooseCellBinding, val onClick:
         viewBinding.checkBox.setOnClickListener{
             onClick(ext, viewBinding.checkBox.isChecked)
         }
-        //TODO: Implementation Picasso
-        //if (ext.icon != 0)
-            viewBinding.iconExtension.setImageResource(R.drawable.alchemy_set)
+
+        val context: Context = viewBinding.checkBox.context
+        val id = context.resources.getIdentifier(ext.icon, "drawable", context.packageName)
+        viewBinding.iconExtension.setImageResource(id)
     }
 }
 

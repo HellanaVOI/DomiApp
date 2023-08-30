@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
+import be.technifuture.domiapp.Builder
 import be.technifuture.domiapp.R
 import be.technifuture.domiapp.databinding.ListCellBinding
 import be.technifuture.domiapp.jsonService.CardModel
@@ -16,40 +17,37 @@ class CardListViewHolder(private var viewBinding: ListCellBinding) :
     fun bind(card: CardModel) {
         viewBinding.coin.text = card.cout
         viewBinding.fragList.text = card.name
-        viewBinding.fragListExt.text = card.extension
+        viewBinding.fragListExt.text = Builder.getExtensionName(card.extension!!)
 
-        viewBinding.type1.setBackgroundColor(
-            ResourcesCompat.getColor(
-                itemView.resources,
-                when (card.cardType(0)) {
-                    CardType.ACTION -> R.color.white
-                    CardType.REACTION -> R.color.blue_attack
-                    CardType.TRESOR -> R.color.yellow_treasure
-                    CardType.DUREE -> R.color.orange_duree
-                    CardType.VICTOIRE -> R.color.green_victory
-                }, null
-            )
-        )
+        if(card.cout?.get(1)  == 'f')
+        viewBinding.coin.background = ResourcesCompat.getDrawable(itemView.resources, R.drawable.potion, null)
 
+        viewBinding.type1.setBackgroundColor(cardType(card.type!![0]))
         if(card.type?.size!! > 1){
-            viewBinding.type2.setBackgroundColor(
-                ResourcesCompat.getColor(
-                    itemView.resources,
-                    when (card.cardType(1)) {
-                        CardType.ACTION -> R.color.white
-                        CardType.REACTION -> R.color.blue_attack
-                        CardType.TRESOR -> R.color.yellow_treasure
-                        CardType.DUREE -> R.color.orange_duree
-                        CardType.VICTOIRE -> R.color.green_victory
-                    }, null
-                )
-            )
+            viewBinding.type2.setBackgroundColor(cardType(card.type!![1]))
         }else{
             viewBinding.type2.visibility = View.INVISIBLE
         }
+    }
 
 
-
+    private fun cardType(id: String): Int{
+        return when(id){
+            "ACTION" ->
+                ResourcesCompat.getColor(itemView.resources, R.color.white, null)
+            "REACT" ->
+                ResourcesCompat.getColor(itemView.resources, R.color.blue_attack, null)
+            "TREASURE" ->
+                ResourcesCompat.getColor(itemView.resources, R.color.yellow_treasure, null)
+            "DURATION" ->
+                ResourcesCompat.getColor(itemView.resources, R.color.orange_duree, null)
+            "VICTORY" ->
+                ResourcesCompat.getColor(itemView.resources, R.color.green_victory, null)
+            "NIGHT" ->
+                ResourcesCompat.getColor(itemView.resources, R.color.black, null)
+            else ->
+                ResourcesCompat.getColor(itemView.resources, R.color.purple_700, null)
+        }
     }
 }
 

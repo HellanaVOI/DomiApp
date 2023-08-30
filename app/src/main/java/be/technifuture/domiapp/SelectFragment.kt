@@ -14,7 +14,6 @@ import be.technifuture.domiapp.jsonService.ExtensionModel
 
 class SelectFragment : Fragment() {
 
-    val builder = Builder(resources)
     lateinit var binding: FragmentSelectBinding
 
     override fun onCreateView(
@@ -27,12 +26,13 @@ class SelectFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        setupRecyclerView(builder.getExtension())
+        Builder.startBuild(resources)
+        setupRecyclerView(Builder.getExtension())
 
         binding.buttonSelect.setOnClickListener {
 
-           /* val direction = SelectFragmentDirections.actionSelectFragmentToListFragment(builder.getPoolOfCarte())
-            findNavController().navigate(direction)*/
+            val direction = SelectFragmentDirections.actionSelectFragmentToListFragment(Builder.getPoolOfCarte())
+            findNavController().navigate(direction)
         }
     }
 
@@ -45,7 +45,7 @@ class SelectFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
 
         recyclerView.adapter = ExtListAdapter(cardList.toMutableList()){ext, selected ->
-            builder.filterList(ext, selected)
+            Builder.filterList(ext, selected)
         }
     }
 }
