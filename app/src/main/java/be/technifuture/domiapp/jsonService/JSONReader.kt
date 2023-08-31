@@ -3,7 +3,7 @@ package be.technifuture.domiapp.jsonService
 import com.google.gson.Gson
 import java.io.InputStream
 
-class JSONReader {
+object JSONReader {
 
     fun getExt(input: InputStream): MutableList<ExtensionModel>{
 
