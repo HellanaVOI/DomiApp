@@ -6,21 +6,30 @@
     android:id="@+id/extContenair"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="1dp"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     android:background="@color/white">
 
 
-    <CheckBox
+    <TextView
         android:id="@+id/checkBox"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:textColor="@color/black"
         android:text="name_ext"
-        app:layout_constraintStart_toEndOf="@id/icon_extension"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_extension"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/selected"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="@id/checkBox"
+        android:background="@color/red"
+        />
 
     <ImageView
         android:id="@+id/icon_extension"

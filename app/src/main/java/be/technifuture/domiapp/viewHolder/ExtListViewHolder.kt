@@ -14,15 +14,25 @@ class ExtListViewHolder(private var viewBinding: ChooseCellBinding, val onClick:
     RecyclerView.ViewHolder(viewBinding.root) {
 
     fun bind(ext: ExtensionModel) {
+        var isChecked = false
         viewBinding.checkBox.text = ext.name
-        viewBinding.checkBox.isChecked = ext.isSelected
+        //viewBinding.checkBox.isChecked = ext.isSelected
         viewBinding.checkBox.setOnClickListener{
-            onClick(ext, viewBinding.checkBox.isChecked)
+            isChecked = toggleCheck(isChecked)
+            onClick(ext, isChecked)
         }
 
         val context: Context = viewBinding.checkBox.context
         val id = context.resources.getIdentifier(ext.icon, "drawable", context.packageName)
         viewBinding.iconExtension.setImageResource(id)
+    }
+
+    private fun toggleCheck(isChecked: Boolean): Boolean{
+        if (!isChecked)
+            viewBinding.selected.setBackgroundColor(ResourcesCompat.getColor(itemView.resources, R.color.green_victory, null))
+        else
+            viewBinding.selected.setBackgroundColor(ResourcesCompat.getColor(itemView.resources, R.color.red, null))
+        return isChecked.not()
     }
 }
 
