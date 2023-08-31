@@ -3,7 +3,9 @@ package be.technifuture.domiapp.viewHolder
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
+import be.technifuture.domiapp.R
 import be.technifuture.domiapp.databinding.ChooseCellBinding
 import be.technifuture.domiapp.jsonService.ExtensionModel
 

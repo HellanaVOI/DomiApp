@@ -33,7 +33,6 @@ class ListFragment : Fragment() {
     private fun setupRecyclerView(cardList: Array<CardModel>){
         val recyclerView = binding.cardRecyclerView
 
-        //recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         recyclerView.adapter = CardListAdapter(

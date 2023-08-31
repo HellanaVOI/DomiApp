@@ -7,12 +7,15 @@
 
     <fragment
         android:id="@+id/selectFragment"
-        android:name="be.technifuture.domiapp.SelectFragment"
+        android:name="be.technifuture.domiapp.fragment.SelectFragment"
         android:label="fragment_select"
         tools:layout="@layout/fragment_select">
         <action
             android:id="@+id/action_selectFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_selectFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/listFragment"
@@ -25,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
-        android:name="be.technifuture.domiapp.MenuFragment"
+        android:name="be.technifuture.domiapp.fragment.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" />
 </navigation>

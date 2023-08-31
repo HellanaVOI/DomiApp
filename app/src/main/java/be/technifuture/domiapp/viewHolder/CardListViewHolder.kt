@@ -5,11 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
-import be.technifuture.domiapp.Builder
+import be.technifuture.domiapp.jsonService.Builder
 import be.technifuture.domiapp.R
 import be.technifuture.domiapp.databinding.ListCellBinding
 import be.technifuture.domiapp.jsonService.CardModel
-import be.technifuture.domiapp.jsonService.CardType
 
 class CardListViewHolder(private var viewBinding: ListCellBinding) :
     RecyclerView.ViewHolder(viewBinding.root) {
@@ -18,9 +17,7 @@ class CardListViewHolder(private var viewBinding: ListCellBinding) :
         viewBinding.coin.text = card.cout
         viewBinding.fragList.text = card.name
         viewBinding.fragListExt.text = Builder.getExtensionName(card.extension!!)
-
-        if(card.cout?.get(1)  == 'f')
-        viewBinding.coin.background = ResourcesCompat.getDrawable(itemView.resources, R.drawable.potion, null)
+        card.cout?.let { checkPotion(it) }
 
         viewBinding.type1.setBackgroundColor(cardType(card.type!![0]))
         if(card.type?.size!! > 1){
@@ -30,6 +27,14 @@ class CardListViewHolder(private var viewBinding: ListCellBinding) :
         }
     }
 
+    private fun checkPotion(price: String){
+        if (price.count() > 1 && price[1] == 'f') {
+            viewBinding.coin.background =
+                ResourcesCompat.getDrawable(itemView.resources, R.drawable.potion, null)
+            viewBinding.coin.text = price[0].toString()
+        }
+
+    }
 
     private fun cardType(id: String): Int{
         return when(id){
