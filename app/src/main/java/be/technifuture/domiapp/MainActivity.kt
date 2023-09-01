@@ -1,6 +1,9 @@
 package be.technifuture.domiapp
 
 import android.os.Bundle
+import android.view.ContextMenu
+import android.view.MenuInflater
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import be.technifuture.domiapp.databinding.ActivityMainBinding
 
@@ -21,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             //val direction = SelectFragmentDirections.actionSelectFragmentToMenuFragment()
             //findNavController().navigate(action)
         }
+
 
         setSupportActionBar(toolbar.mainToolbar)
 
