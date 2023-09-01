@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import be.technifuture.domiapp.jsonService.Builder
 import be.technifuture.domiapp.R
@@ -29,10 +30,10 @@ class CardListViewHolder(private var viewBinding: ListCellBinding) :
 
     private fun checkPotion(price: String){
         if (price.count() > 1 && price[1] == 'f') {
-            viewBinding.coin.background =
-                ResourcesCompat.getDrawable(itemView.resources, R.drawable.potion, null)
+            viewBinding.potion.isVisible = true
             viewBinding.coin.text = price[0].toString()
-        }
+        }else
+            viewBinding.potion.isVisible = false
 
     }
 
