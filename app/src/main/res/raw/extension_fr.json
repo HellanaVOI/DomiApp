@@ -64,13 +64,13 @@
       "id": "6",
       "name": "Arrière Pays",
       "icon": "hinterlands1stedition_set",
-      "isBlackList": "true"
+      "isBlackList": "false"
     },
     {
       "id": "20",
       "name": "Arrière Pays (2e Edition)",
       "icon": "hinterlands2ndedition_set",
-      "isBlackList": "true"
+      "isBlackList": "false"
     },
     {
       "id": "7",

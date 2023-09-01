@@ -13,6 +13,8 @@ import be.technifuture.domiapp.jsonService.ExtensionModel
 class ExtListViewHolder(private var viewBinding: ChooseCellBinding, val onClick: (ExtensionModel, Boolean) -> Unit) :
     RecyclerView.ViewHolder(viewBinding.root) {
 
+    private lateinit var context: Context
+
     fun bind(ext: ExtensionModel) {
         var isChecked = false
         viewBinding.checkBox.text = ext.name
@@ -22,16 +24,19 @@ class ExtListViewHolder(private var viewBinding: ChooseCellBinding, val onClick:
             onClick(ext, isChecked)
         }
 
-        val context: Context = viewBinding.checkBox.context
+        context = viewBinding.checkBox.context
         val id = context.resources.getIdentifier(ext.icon, "drawable", context.packageName)
         viewBinding.iconExtension.setImageResource(id)
     }
 
     private fun toggleCheck(isChecked: Boolean): Boolean{
-        if (!isChecked)
-            viewBinding.selected.setBackgroundColor(ResourcesCompat.getColor(itemView.resources, R.color.green_victory, null))
-        else
-            viewBinding.selected.setBackgroundColor(ResourcesCompat.getColor(itemView.resources, R.color.red, null))
+        if (!isChecked){
+            //viewBinding.selected.setBackgroundColor(ResourcesCompat.getColor(itemView.resources, R.color.green_victory, null))
+            viewBinding.extContenair.setBackgroundColor(context.getColor(R.color.yellow_treasure))
+        } else{
+            //viewBinding.selected.setBackgroundColor(ResourcesCompat.getColor(itemView.resources, R.color.red, null))
+            viewBinding.extContenair.setBackgroundColor(context.getColor(R.color.white))
+        }
         return isChecked.not()
     }
 }

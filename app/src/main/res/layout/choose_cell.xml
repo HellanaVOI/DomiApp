@@ -24,13 +24,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="30sp"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/selected"
-        android:layout_width="15dp"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="@id/checkBox"
-        android:background="@color/red"
-        />
+
 
     <ImageView
         android:id="@+id/icon_extension"
