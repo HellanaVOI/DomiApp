@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_selectFragment_to_listFragment"
             app:destination="@id/listFragment" />
-        <action
-            android:id="@+id/action_selectFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/listFragment"
@@ -27,8 +24,8 @@
             app:argType="be.technifuture.domiapp.jsonService.CardModel[]" />
     </fragment>
     <fragment
-        android:id="@+id/menuFragment"
-        android:name="be.technifuture.domiapp.fragment.MenuFragment"
-        android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        android:id="@+id/settingFragment"
+        android:name="be.technifuture.domiapp.settingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>
