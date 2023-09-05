@@ -1,14 +1,12 @@
 package be.technifuture.domiapp
 
 import android.os.Bundle
-import android.util.Log
-import android.view.ContextMenu
-import android.view.MenuInflater
+import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.PopupMenu
+import androidx.navigation.findNavController
 import be.technifuture.domiapp.databinding.ActivityMainBinding
+import be.technifuture.domiapp.fragment.SelectFragmentDirections
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,30 +18,28 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val toolbar = binding.toolBarCustom
-        setSupportActionBar(toolbar.mainToolbar)
-
-    }
-
-    fun showPopup(v: View) {
-        PopupMenu(this, v).apply {
-            // MainActivity implements OnMenuItemClickListener
-            setOnMenuItemClickListener {
-                when (it.itemId) {
-                    R.id.language -> {
-                        Log.d("DEBUG", "1er Choix")
-                        true
-                    }
-                    R.id.filter -> {
-                        Log.d("DEBUG", "2e Choix")
-                        true
-                    }
-                    else -> false
-                }
+        findNavController(R.id.nav_host_fragment_container).addOnDestinationChangedListener{ _, destination, _ ->
+            when(destination.id){
+                R.id.selectFragment -> menuInflater.inflate(R.menu.setting_home, binding)
+                R.id.listFragment -> menuInflater.inflate(R.menu.setting_home, binding)
+                else -> menuInflater.inflate(R.menu.setting_home, binding)
             }
-            inflate(R.menu.action)
-            show()
         }
+
+
+
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.setting_home, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id: Int = item.itemId
+        if (id == R.id.filter) {
+            findNavController(R.id.nav_host_fragment_container).navigate(SelectFragmentDirections.actionSelectFragmentToSettingFragment())
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }

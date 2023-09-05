@@ -18,20 +18,20 @@ class FilterListViewHolder {
     }
 
     class FilterListAdapter(private var ext: MutableList<ExtensionModel>) :
-        RecyclerView.Adapter<ExtListViewHolder>() {
+        RecyclerView.Adapter<FilterListViewHolder>() {
         private lateinit var binding: FilterCellBinding
 
         override fun onCreateViewHolder(
             parent: ViewGroup,
             viewType: Int
-        ): ExtListViewHolder {
+        ): FilterListViewHolder {
             //charge le layout de la cellule
             binding = FilterCellBinding
                 .inflate(LayoutInflater.from(parent.context), parent, false)
             return FilterListViewHolder(binding)
         }
 
-        override fun onBindViewHolder(holder: ExtListViewHolder, position: Int) {
+        override fun onBindViewHolder(holder: FilterListViewHolder, position: Int) {
             holder.bind(ext[position])
         }
 
@@ -39,4 +39,5 @@ class FilterListViewHolder {
         override fun getItemCount(): Int {
             return ext.size
         }
+    }
 }
