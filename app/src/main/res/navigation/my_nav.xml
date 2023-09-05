@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/selectFragment">
+    app:startDestination="@id/settingFiltreFragment">
 
     <fragment
         android:id="@+id/selectFragment"
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="be.technifuture.domiapp.ListFragment"
+        android:name="be.technifuture.domiapp.fragment.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <argument
@@ -25,7 +25,16 @@
     </fragment>
     <fragment
         android:id="@+id/settingFragment"
-        android:name="be.technifuture.domiapp.settingFragment"
+        android:name="be.technifuture.domiapp.fragment.SettingFragment"
         android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_settingFiltreFragment"
+            app:destination="@id/settingFiltreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFiltreFragment"
+        android:name="be.technifuture.domiapp.fragment.SettingFilterFragment"
+        android:label="fragment_setting_filtre"
+        tools:layout="@layout/fragment_setting_filtre" />
 </navigation>

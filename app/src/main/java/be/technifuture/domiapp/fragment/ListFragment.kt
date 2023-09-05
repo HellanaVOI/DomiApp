@@ -1,15 +1,15 @@
-package be.technifuture.domiapp
+package be.technifuture.domiapp.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
-import be.technifuture.domiapp.viewHolder.CardListAdapter
 import be.technifuture.domiapp.databinding.FragmentListBinding
 import be.technifuture.domiapp.jsonService.CardModel
+import be.technifuture.domiapp.viewHolder.CardListAdapter
 
 class ListFragment : Fragment() {
 

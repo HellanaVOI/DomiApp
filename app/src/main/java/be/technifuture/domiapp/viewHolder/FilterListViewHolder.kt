@@ -1,0 +1,42 @@
+package be.technifuture.domiapp.viewHolder
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import be.technifuture.domiapp.databinding.ChooseCellBinding
+import be.technifuture.domiapp.databinding.FilterCellBinding
+import be.technifuture.domiapp.jsonService.ExtensionModel
+
+class FilterListViewHolder {
+
+    class FilterListViewHolder(private var viewBinding: FilterCellBinding) :
+        RecyclerView.ViewHolder(viewBinding.root) {
+
+        fun bind(ext: ExtensionModel) {
+
+        }
+    }
+
+    class FilterListAdapter(private var ext: MutableList<ExtensionModel>) :
+        RecyclerView.Adapter<ExtListViewHolder>() {
+        private lateinit var binding: FilterCellBinding
+
+        override fun onCreateViewHolder(
+            parent: ViewGroup,
+            viewType: Int
+        ): ExtListViewHolder {
+            //charge le layout de la cellule
+            binding = FilterCellBinding
+                .inflate(LayoutInflater.from(parent.context), parent, false)
+            return FilterListViewHolder(binding)
+        }
+
+        override fun onBindViewHolder(holder: ExtListViewHolder, position: Int) {
+            holder.bind(ext[position])
+        }
+
+        //retourne le nbr d'élément à afficher
+        override fun getItemCount(): Int {
+            return ext.size
+        }
+}
