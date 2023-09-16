@@ -3,6 +3,7 @@ package be.technifuture.domiapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import be.technifuture.domiapp.databinding.ActivityMainBinding
+import be.technifuture.domiapp.model.ExtWithCard
 
 
 class MainActivity : AppCompatActivity() {
