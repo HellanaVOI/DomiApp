@@ -3,18 +3,16 @@ package be.technifuture.domiapp.fragment
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import be.technifuture.domiapp.R
+import be.technifuture.domiapp.dao.DbBuilder
 import be.technifuture.domiapp.viewHolder.ExtListAdapter
 import be.technifuture.domiapp.databinding.FragmentSelectBinding
 import be.technifuture.domiapp.jsonService.Builder
-import be.technifuture.domiapp.jsonService.ExtensionModel
+import be.technifuture.domiapp.model.ExtensionModel
 
 class SelectFragment : Fragment() {
 
@@ -30,7 +28,7 @@ class SelectFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        Builder.startBuild(resources)
+
         setupRecyclerView(Builder.getExtension())
 
 

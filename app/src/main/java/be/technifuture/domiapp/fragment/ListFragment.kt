@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import be.technifuture.domiapp.databinding.FragmentListBinding
-import be.technifuture.domiapp.jsonService.CardModel
+import be.technifuture.domiapp.model.CardModel
 import be.technifuture.domiapp.viewHolder.CardListAdapter
 
 class ListFragment : Fragment() {

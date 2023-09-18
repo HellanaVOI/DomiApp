@@ -3,9 +3,8 @@ package be.technifuture.domiapp.viewHolder
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import be.technifuture.domiapp.databinding.ChooseCellBinding
 import be.technifuture.domiapp.databinding.FilterCellBinding
-import be.technifuture.domiapp.jsonService.ExtensionModel
+import be.technifuture.domiapp.model.ExtensionModel
 
 class FilterListViewHolder {
 

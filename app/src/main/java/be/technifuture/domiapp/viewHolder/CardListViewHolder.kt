@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import be.technifuture.domiapp.jsonService.Builder
 import be.technifuture.domiapp.R
 import be.technifuture.domiapp.databinding.ListCellBinding
-import be.technifuture.domiapp.jsonService.CardModel
+import be.technifuture.domiapp.model.CardModel
 
 class CardListViewHolder(private var viewBinding: ListCellBinding) :
     RecyclerView.ViewHolder(viewBinding.root) {

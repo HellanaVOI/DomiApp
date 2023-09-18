@@ -2,6 +2,9 @@ package be.technifuture.domiapp.jsonService
 
 import android.content.res.Resources
 import be.technifuture.domiapp.R
+import be.technifuture.domiapp.dao.DbBuilder
+import be.technifuture.domiapp.model.CardModel
+import be.technifuture.domiapp.model.ExtensionModel
 
 object Builder{
 
@@ -9,28 +12,22 @@ object Builder{
     private var card = mutableListOf<CardModel>()
     private var nbrCard: Int = 10
 
-    fun startBuild(res: Resources){
-        extension = JSONReader.getExt(res.openRawResource(R.raw.extension_fr))
-        card = JSONReader.getCard(res.openRawResource(R.raw.card_fr))
-    }
-
     fun filterList(ext: ExtensionModel, selected: Boolean) {
-        extension.first {
-            it.id == ext.id
-        }.isSelected = selected
+        if(selected){
+            extension.add(ext)
+        }else
+            extension.remove(ext)
     }
 
     fun getPoolOfCarte(): Array<CardModel> {
         val choose = mutableListOf<CardModel>()
         val tempList = mutableListOf<CardModel>()
-        val extensionSelected = extension.filter { itExt ->
-            itExt.isSelected
-        }
+
 
         // Trie des carte vis à vis des Ext selectionner
-        extensionSelected.forEach { ext ->
+        extension.forEach { ext ->
             tempList.addAll(card.filter { card ->
-              ext.id == card.extension
+                DbBuilder.db
             })
         }
 

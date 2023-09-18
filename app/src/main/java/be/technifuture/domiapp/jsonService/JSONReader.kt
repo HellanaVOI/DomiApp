@@ -1,5 +1,9 @@
 package be.technifuture.domiapp.jsonService
 
+import be.technifuture.domiapp.model.CarResponse
+import be.technifuture.domiapp.model.CardModel
+import be.technifuture.domiapp.model.ExtensionModel
+import be.technifuture.domiapp.model.ExtensionResponse
 import com.google.gson.Gson
 import java.io.InputStream
 

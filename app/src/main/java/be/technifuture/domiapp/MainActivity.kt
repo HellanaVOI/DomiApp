@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import be.technifuture.domiapp.dao.DbBuilder
 import be.technifuture.domiapp.databinding.ActivityMainBinding
 import be.technifuture.domiapp.fragment.SelectFragmentDirections
 
@@ -18,16 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        findNavController(R.id.nav_host_fragment_container).addOnDestinationChangedListener{ _, destination, _ ->
-            when(destination.id){
-                R.id.selectFragment -> menuInflater.inflate(R.menu.setting_home, binding)
-                R.id.listFragment -> menuInflater.inflate(R.menu.setting_home, binding)
-                else -> menuInflater.inflate(R.menu.setting_home, binding)
-            }
-        }
-
-
-
+        DbBuilder.initializeDB(this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
