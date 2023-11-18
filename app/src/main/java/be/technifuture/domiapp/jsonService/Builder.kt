@@ -12,6 +12,11 @@ object Builder{
     private var card = mutableListOf<CardModel>()
     private var nbrCard: Int = 10
 
+    fun startBuild(res: Resources){
+        extension = JSONReader.getExt(res.openRawResource(R.raw.extension))
+        card = JSONReader.getCard(res.openRawResource(R.raw.card))
+    }
+
     fun filterList(ext: ExtensionModel, selected: Boolean) {
         if(selected){
             extension.add(ext)

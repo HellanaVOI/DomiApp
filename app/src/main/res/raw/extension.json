@@ -1,0 +1,172 @@
+{
+  "data": [
+    {
+      "id": "0",
+      "name": {
+        "fr": "Dominion 1e",
+        "en": "Dominion 1st"
+      },
+      "icon": "dominion1stedition_set"
+    },
+    {
+      "id": "15",
+      "name": {
+        "fr": "Dominion 2e",
+        "en": "Dominion 2nd"
+      },
+      "icon": "dominion2ndedition_set"
+    },
+    {
+      "id": "1",
+      "name": {
+        "fr": "Intrigue 1e",
+        "en": "Intrigue 1st"
+      },
+      "icon": "intrigue1stedition_set"
+    },
+    {
+      "id": "14",
+      "name": {
+        "fr": "Intrigue 2e",
+        "en": "Intrigue 2nd"
+      },
+      "icon": "intrigue2ndedition_set"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Rivage 1e",
+        "en": "Seaside 1st"
+      },
+      "icon": "seaside1stedition_set"
+    },
+    {
+      "id": "16",
+      "name": {
+        "fr": "Rivage 2e",
+        "en": "Seaside 2nd"
+      },
+      "icon": "seaside2ndedition_set"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Alchimie",
+        "en": "Alchemy"
+      },
+      "icon": "alchemy_set"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Prosperité 1e",
+        "en": "Prosperity 1st"
+      },
+      "icon": "prosperity1stedition_set"
+    },
+    {
+      "id": "19",
+      "name": {
+        "fr": "Prosperité 2e",
+        "en": "Prosperity 2snd"
+      },
+      "icon": "prosperity2ndedition_set"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Abondance",
+        "en": "Cornucopia"
+      },
+      "icon": "cornucopia_set"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Arrière Pays 1e",
+        "en": "Hinterland 1st"
+      },
+      "icon": "hinterlands1stedition_set"
+    },
+    {
+      "id": "20",
+      "name": {
+        "fr": "Arrière Pays 2e",
+        "en": "Hinterland 2nd"
+      },
+      "icon": "hinterlands2ndedition_set"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "L'Âge des ténébres",
+        "en": "Dark Ages"
+      },
+      "icon": "dark_ages_set"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Guildes",
+        "en": "Guilds"
+      },
+      "icon": "guilds_set"
+    },
+    {
+      "id": "9",
+      "name": {
+        "fr": "Aventures",
+        "en": "Adventures"
+      },
+      "icon": "adventures_set"
+    },
+    {
+      "id": "10",
+      "name": {
+        "fr": "Empires",
+        "en": "Empires"
+      },
+      "icon": "empires_set"
+    },
+    {
+      "id": "11",
+      "name": {
+        "fr": "Nocturne",
+        "en": "Nocturne"
+      },
+      "icon": "nocturne_set"
+    },
+    {
+      "id": "12",
+      "name": {
+        "fr": "Renaissance",
+        "en": "Renaissance"
+      },
+      "icon": "renaissance_set"
+    },
+    {
+      "id": "13",
+      "name": {
+        "fr": "Ménagerie",
+        "en": "Menagerie"
+      },
+      "icon": "menagerie_set"
+    },
+    {
+      "id": "17",
+      "name": {
+        "fr": "Allies",
+        "en": "Alies"
+      },
+      "icon": "allies_set"
+    },
+    {
+      "id": "18",
+      "name": {
+        "fr": "Plunder",
+        "en": "Plunder"
+      },
+      "icon": "plunder_set"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
-@Entity
+/*@Entity
 data class ExtensionModel(
     @PrimaryKey(autoGenerate = true)
     var extId: Long = 0,
@@ -14,4 +14,21 @@ data class ExtensionModel(
     var icon: String? = null,
     @SerializedName("is_black_list")
     var isBlackList: Boolean = false,
+)*/
+
+data class ExtensionModel(
+
+    var id: String,
+    var name: ExtensionName,
+    var icon: String,
+)
+
+data class ExtensionName(
+    var fr: String,
+    var en: String
+)
+
+data class ExtensionResponse(
+    @SerializedName("data")
+    var list: MutableList<ExtensionModel>
 )
